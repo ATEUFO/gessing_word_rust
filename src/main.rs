@@ -1,12 +1,33 @@
-use std::io;
+// use std::io;
 fn main() {
     let mut n: i32 = 5;
-    let mut s: String = String::new();
+    // let mut s: String = String::new();
+
     println!("Hello, world!");
     println!("La valeur de n est {}", n);
+
     n = n + 10;
     println!("La valeur de n est {}", n);
+    let n :i64 = 10;
+    println!("La valeur de n est {}", n);
 
-    io::stdin().read_line(&mut s).expect("erreur de lecture");
-    println!("La valeur de s est {}", s);
+    const P : u32 = 100;
+    println!("La valeur de P est {}", P);
+
+    let decision:bool =true;
+    if decision
+    {
+        println!("La valeur de decision est {}", decision);
+    }
+    // char test
+    let lettre = 'T';
+    println!("{}", lettre);
+    // io::stdin().read_line(&mut s).expect("erreur de lecture");
+    // println!("La valeur de s est {}", s);
+    //trying the tuple
+    let tup:(i64, &str, bool) = (12, "dad", true);
+    println!("la valeur de tup 1 est {:?}",tup);
+    //testing the array
+    let arr = [1,2,3];
+    println!("{}",arr[2]);
 }
