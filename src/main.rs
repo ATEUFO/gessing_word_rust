@@ -1,4 +1,4 @@
-// use std::io;
+use std::io;
 fn main() {
     let mut n: i32 = 5;
     // let mut s: String = String::new();
@@ -30,4 +30,9 @@ fn main() {
     //testing the array
     let arr = [1,2,3];
     println!("{}",arr[2]);
+    //récupération des élements saisit par l'utilisateur
+    let mut input = String::new();
+
+    io::stdin().read_line(&mut input).expect("erreur de lecture");
+    println!("votre nombre est {}", input);
 }
