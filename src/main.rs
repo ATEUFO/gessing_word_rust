@@ -31,8 +31,25 @@ fn main() {
     let arr = [1,2,3];
     println!("{}",arr[2]);
     //récupération des élements saisit par l'utilisateur
-    let mut input = String::new();
+    // let mut input = String::new();
 
-    io::stdin().read_line(&mut input).expect("erreur de lecture");
-    println!("votre nombre est {}", input);
+    // io::stdin().read_line(&mut input).expect("erreur de lecture");
+    // println!("votre nombre est {}", input);
+
+    //adding and combining many type of variable
+    let a = 110_i32;
+    let b = 10_i64;
+    let c = (a as i64)/b;
+    println!("{}",c);
+    //converting and string to a number
+     let mut text:String=String::new();
+    // récupéront un texte entré par l'utilisateur
+    io::stdin().read_line(&mut text).expect("erreur de lecture");
+    println!("votre nombre est {}",text );
+    // conversion en entier de la valeur saisit
+    let nombre :i64 = text.trim().parse::<i64>().unwrap();
+    
+    println!("La valeur convertie est {}",nombre );
+    // opérateur de comparaison
+    
 }
