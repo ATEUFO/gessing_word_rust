@@ -44,12 +44,36 @@ fn main() {
     //converting and string to a number
      let mut text:String=String::new();
     // récupéront un texte entré par l'utilisateur
-    io::stdin().read_line(&mut text).expect("erreur de lecture");
+    // io::stdin().read_line(&mut text).expect("erreur de lecture");
     println!("votre nombre est {}",text );
     // conversion en entier de la valeur saisit
-    let nombre :i64 = text.trim().parse::<i64>().unwrap();
+    // let nombre :i64 = text.trim().parse::<i64>().unwrap();
     
-    println!("La valeur convertie est {}",nombre );
+    // println!("La valeur convertie est {}",nombre );
     // opérateur de comparaison
-    
+    let comparaisons = 10.20 ==(10 as f32);
+    println!("la valeur de comparaison est {}",comparaisons);
+    //je suis un dev rust
+
+    // teston la condition if
+    let mut food = String::new();
+    io::stdin().read_line(&mut food).expect("error");
+
+    if food.trim() == "cookie"
+    {
+        print!("this is a cookie '{}' et food.trim '{}' ", food, food.trim());
+    }
+    else 
+    {
+        println!("this is not a cookie");
+    }
+    let result = add_number(20, 30);
+    println!("la valeur esr {}",result);
+}
+
+//testin the fonction 
+
+fn add_number(n :i32,i :i32)->i32
+{
+    n + i
 }
