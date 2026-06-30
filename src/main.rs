@@ -42,7 +42,7 @@ fn main() {
     let c = (a as i64)/b;
     println!("{}",c);
     //converting and string to a number
-     let mut text:String=String::new();
+    let text:String=String::new();
     // récupéront un texte entré par l'utilisateur
     // io::stdin().read_line(&mut text).expect("erreur de lecture");
     println!("votre nombre est {}",text );
@@ -56,17 +56,17 @@ fn main() {
     //je suis un dev rust
 
     // teston la condition if
-    let mut food = String::new();
-    io::stdin().read_line(&mut food).expect("error");
+    // let mut food = String::new();
+    // io::stdin().read_line(&mut food).expect("error");
 
-    if food.trim() == "cookie"
-    {
-        print!("this is a cookie '{}' et food.trim '{}' ", food, food.trim());
-    }
-    else 
-    {
-        println!("this is not a cookie");
-    }
+    // if food.trim() == "cookie"
+    // {
+    //     print!("this is a cookie '{}' et food.trim '{}' ", food, food.trim());
+    // }
+    // else 
+    // {
+    //     println!("this is not a cookie");
+    // }
     let result = add_number(20, 30);
     println!("la valeur esr {}",result);
     // //testing the match 
@@ -91,6 +91,17 @@ fn main() {
         if compter>=10 {
             break;
         }
+    }
+    //for loop 
+    let a = [1,2,3,4];
+    for i in a.iter()
+    {
+        println!("voici {}", i);
+    }
+    // for loop white range
+    for i in 1..10
+    {
+        println!("this is ->{}",i);
     }
 }
 
