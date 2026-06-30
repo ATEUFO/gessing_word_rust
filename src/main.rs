@@ -69,6 +69,29 @@ fn main() {
     }
     let result = add_number(20, 30);
     println!("la valeur esr {}",result);
+    // //testing the match 
+    // enum coins{
+    //     Dollar,
+    //     Euro,
+    //     Penny,
+    // }
+    // match coins{
+    //     coins::Penny=>println!("c'est un penny"),
+    //     coins::Euro=>println!("c'est un euro"),
+    //     coins::Dollar=>println!("c'est un dollar"),
+    // }
+
+    // let coins::Penny;
+
+    //learning the loops 
+    let mut compter:u32 = 0;
+    loop {
+        compter +=1;
+        println!("hello arthur");
+        if compter>=10 {
+            break;
+        }
+    }
 }
 
 //testin the fonction 
