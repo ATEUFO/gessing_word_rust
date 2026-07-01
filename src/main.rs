@@ -103,9 +103,9 @@ fn main() {
     {
         println!("this is ->{}",i);
     }
-    //check 6
+    
 }
-// check
+
 
 
 //testin the fonction 
